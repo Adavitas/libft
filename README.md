@@ -119,7 +119,7 @@ typedef struct s_list
 
 ---
 
-### Functions (9 functions)
+### Functions
 `ft_lstnew` `ft_lstadd_front` `ft_lstadd_back` `ft_lstsize` `ft_lstlast` `ft_lstdelone` `ft_lstclear` `ft_lstiter` `ft_lstmap`
 
 ---
@@ -144,6 +144,8 @@ typedef struct s_list
 - **[libft-unit-test](https://github.com/alelievr/libft-unit-test)** - Unit testing
 - **[Tripouille](https://github.com/Tripouille/libftTester)** - Popular tester
 - **Valgrind** - Memory leak detection
+
+```
 
 ---
 
