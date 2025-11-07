@@ -1,5 +1,8 @@
 NAME = libft.a
 
+SRC_DIR = src
+INC_DIR = src
+
 SRC = ft_isalpha.c\
 	ft_isdigit.c\
 	ft_isalnum.c\
@@ -45,13 +48,15 @@ BONUS = ft_lstnew.c\
 		ft_lstiter.c\
 		ft_lstmap.c\
 
-B_OBJ = $(BONUS:.c=.o)
+SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
+B_SRCS = $(addprefix $(SRC_DIR)/, $(BONUS))
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRCS:.c=.o)
+B_OBJ = $(B_SRCS:.c=.o)
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
 all: $(NAME)
 
