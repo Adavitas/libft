@@ -1,17 +1,29 @@
+<div align="center">
+
 # 📚 Libft
 
-### Your very first own library - A collection of essential C functions recreated from scratch
+### *My very first own library - A collection of essential C functions recreated from scratch.*
 
-[![42 School](https://img.shields.io/badge/42-School-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr/)
-[![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![42 School](https://img.shields.io/badge/School-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr)
+[![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)](https://github.com/42School/norminette)
-[![Grade](https://img.shields.io/badge/Grade-125%2F100-success?style=for-the-badge)](https://github.com/Adavitas/libft)
+![Grade](https://img.shields.io/badge/Grade-125%2F100-success?style=for-the-badge)
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-• [About](#-about) • [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Function Overview](#-function-overview) • [Bonus Functions](#-bonus-functions) • [Makefile Commands](#%EF%B8%8F-makefile-commands) • [Testing](#-testing) • [Author](#-author)
+- [About](#-about)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Function Overview](#-function-overview)
+- [Bonus Functions](#-bonus-functions)
+- [Makefile Commands](#%EF%B8%8F-makefile-commands)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
@@ -105,6 +117,8 @@ typedef struct s_list
 }                   t_list;
 ```
 
+---
+
 ### Functions (9 functions)
 `ft_lstnew` `ft_lstadd_front` `ft_lstadd_back` `ft_lstsize` `ft_lstlast` `ft_lstdelone` `ft_lstclear` `ft_lstiter` `ft_lstmap`
 
@@ -122,33 +136,7 @@ typedef struct s_list
 
 **Compilation:** `-Wall -Wextra -Werror`
 
----
 
-## 🧪 Testing
-
-### Quick Test
-```c
-#include "libft.h"
-#include <stdio.h>
-
-int main(void)
-{
-    printf("strlen: %zu\n", ft_strlen("Hello"));
-    printf("atoi: %d\n", ft_atoi("-42"));
-    
-    char *str = ft_itoa(-12345);
-    printf("itoa: %s\n", str);
-    free(str);
-    
-    char **split = ft_split("one,two,three", ',');
-    for (int i = 0; split[i]; i++)
-    {
-        printf("split[%d]: %s\n", i, split[i]);
-        free(split[i]);
-    }
-    free(split);
-    return (0);
-}
 ```
 
 ### Recommended Testers
@@ -161,9 +149,9 @@ int main(void)
 
 ## 👨‍💻 Author
 
-**Aleksandre Davitashvili (Adavitas)** - 42 Wolfsburg Student
+**Aleksandre Davitashvili** (Adavitas) - *42 Student*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Adavitas-181717?style=for-the-badge&logo=github)](https://github.com/Adavitas)
+[![GitHub](https://img.shields.io/badge/GitHub-Adavitas-181717?style=flat&logo=github)](https://github.com/Adavitas)
 
 ---
 
@@ -173,10 +161,4 @@ This project is part of the 42 School curriculum.
 
 ---
 
-<div align="center">
-
-### Made with ❤️ at 42 Wolfsburg
-
-![42 Wolfsburg](https://img.shields.io/badge/42-Wolfsburg-000000?style=for-the-badge&logo=42&logoColor=white)
-
-</div>
+*This project was created as part of the 42 School common core curriculum.*
